@@ -1,0 +1,12 @@
+<web-app>
+<servlet>
+<servlet-name>MyAnnotationServlet </servlet-name>
+<servlet-class>MyAnnotationServlet </servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>MyAnnotationServlet </servlet-name>
+<url-pattern>/viaAnnotation</url-pattern>
+</servlet-mapping>
+
+
+</web-app>3

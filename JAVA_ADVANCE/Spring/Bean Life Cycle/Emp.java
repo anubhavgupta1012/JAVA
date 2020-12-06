@@ -1,0 +1,29 @@
+
+public class Emp{
+	private String name;
+
+		Emp()
+		{
+	System.out.println("\n\nDefault constructor in EMP Class");	
+		}
+
+	public void setName(String name)
+		{
+		this.name=name;
+		}
+
+	public void getName()
+		{
+		System.out.println("My Name is :" +name);
+		}
+	
+	public void init()
+		{
+		System.out.println("Init Method");
+		}
+	
+	public void destroy()
+		{
+		System.out.println("Destroy Method");
+		}
+	}

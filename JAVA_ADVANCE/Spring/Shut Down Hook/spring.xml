@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd"
+	
+	default-init-method="init"
+	default-destroy-method="destroy">
+		
+	<bean id="hello" class="Emp" init-method="init" destroy-method="destroy">
+		<property name="name" value="Bean Lyf Cycle in EMP"/>
+	</bean>
+
+	<bean id="hello1" class="Emp1" init-method="init" destroy-method="destroy">
+		<property name="name1" value="Bean Lyf Cycle in EMP1"/>
+	</bean>
+
+</beans>

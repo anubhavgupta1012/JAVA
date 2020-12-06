@@ -1,0 +1,62 @@
+<script language="javascript">
+
+	function postRequest(strURL){
+		var xmlhttp;
+	
+		if(window.XMLHttpRequest)
+				xmlhttp=new XMLHttpRequest();	//for IE, Firefox, Chrome, Safari
+		
+		else if(window.ActiveXObject)
+			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+				
+		
+		xmlhttp.open("POST",strURL,true);
+		xmlhttp.setRequestHeader('content-Type','application/x-www-form-urlencoded');
+
+		
+		xmlhttp.onreadystatechange=function(){
+		
+		if(xmlhttp.readyState==4)
+			updatepage(xmlhttp.responseText);
+							}
+		xmlhttp.send(strURL);
+		
+			}
+
+
+	
+	function updatepage(str){
+
+		document.getElementById('result').value=str;
+						}
+
+
+
+	
+	function callMultiply(){
+
+		var a=parseInt(document.f1.a.value);
+		var b=parseInt(document.f1.b.value);
+		var url="add.jsp?a="+a+"&b="+b;
+		postRequest(url);
+				} 
+
+</script>
+
+<body>
+<h2 align="centre"> <font color="#000080"> AJAX2</font></h2>
+
+<form name="f1">
+	<input name="a" id="a" value=" ">
+	<input name="b" id="b" value=" ">
+	<input name="result" id="result" type="text">
+	<input type="submit" value="Multiply" onClick="callMultiply()" name="showMultiply">
+
+</form>
+	
+	
+	
+
+
+<div id="result">HIII</div>
+</body>

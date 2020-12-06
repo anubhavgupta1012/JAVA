@@ -1,0 +1,27 @@
+<web-app>
+	<servlet>
+		<servlet-name>MyFilterServlet</servlet-name>
+		<servlet-class>MyFilterServlet</servlet-class>
+		<init-param>
+		<param-name>driver</param-name>
+		<param-value>oracle.jdbc.driver.OracleDriver</param-value>
+		</init-param>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>MyFilterServlet</servlet-name>
+		<url-pattern>/filterusinginit</url-pattern>
+	</servlet-mapping>
+
+		<filter>
+			<filter-name>MyFilterInitParam</filter-name>
+			<filter-class>MyFilterInitParam</filter-class>
+		</filter>
+		
+	<filter-mapping>
+		<filter-name>MyFilterInitParam</filter-name>
+		<url-pattern>/filterusinginit</url-pattern>
+	</filter-mapping>
+
+	
+</web-app>

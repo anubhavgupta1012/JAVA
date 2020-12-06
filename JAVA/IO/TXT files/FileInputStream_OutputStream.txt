@@ -1,0 +1,46 @@
+    
+
+FileInputStream & FileOutputStream classes
+-------------------------------------------
+
+Constructors:
+		1.) public FileOutputStream(String fname)
+
+		eg.
+				
+		new FileOutputStream("abc.txt");
+			//  - Relative Path
+
+		new FileOutputStream("d:\\temp\\abc.txt");	
+			//   d:\temp folder  - Absolute path
+
+		
+		new FileOutputStream("..\\..\\abc.txt");
+			// 	- Relative Path
+
+		2.) public FileOutputStream(File f)
+
+		
+	3.) public FileOutputStream(String fname,boolean append)
+
+
+	4.) public FileOutputStream(File f,boolean append)\
+
+
+public FileInputStream(String fname)throws FileNotFoundException		
+
+
+
+
+
+
+		
+				
+				
+		
+
+
+
+		
+	
+			

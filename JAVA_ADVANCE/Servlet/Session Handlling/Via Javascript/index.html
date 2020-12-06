@@ -1,0 +1,38 @@
+<html>
+	<body>
+	<script type="text/javascript">
+		
+	function ABC(){
+			
+		var form=document.form1;
+		var name=form.name.value;
+		var pass=form.pss.value;
+
+		if(navigator.cookieEnabled==false)
+		{	
+		document.write("<h2>Please Eneble the cookies");
+		document.close();
+		}
+		else{
+			if(name==''||pass='')
+				{
+			document.write("<h4>Enter both Uname and Password</h4>");
+			document.close();
+				}
+			else{
+				return;
+			}
+		}
+
+		}
+	</script>
+
+	<form  action="login" name="form1" method="post">
+	 Name::<input type="text" name="name"><br>
+	Password::<input type="password" name="pass">	<br>
+	<input type="submit" onClick="ABC()">
+
+	</form>		
+	</body>
+</html>
+			

@@ -1,0 +1,19 @@
+
+InputStream
+	<- FileInputStream
+	<- BufferedInputStream
+	<- ByteArrayInputStream
+	<- DataInputStream
+	<- PipedInputStream
+	<- ObjectInputStream
+	<- SequenceInputStream
+
+
+OutputStream
+	<- FileOutputStream
+	<- BufferedOutputStream
+	<- ByteArrayOutputStream
+	<- DataOutputStream
+	<- PipedOutputStream
+	<- ObjectOutputStream
+	<- PrintStream

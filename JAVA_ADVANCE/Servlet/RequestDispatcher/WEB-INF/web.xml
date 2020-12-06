@@ -1,0 +1,34 @@
+<web-app>
+
+
+	<servlet>
+		<servlet-name>RequestDispatcherServlet</servlet-name>
+		<servlet-class>RequestDispatcherServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RequestDispatcherServlet</servlet-name>
+		<url-pattern>/see</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>err</servlet-name>
+		<servlet-class>err</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>err</servlet-name>
+		<url-pattern>/err</url-pattern>
+	</servlet-mapping>
+	
+
+	<servlet>	
+		<servlet-name>wel</servlet-name>
+		<servlet-class>wel</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>wel</servlet-name>
+		<url-pattern>/wel</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>

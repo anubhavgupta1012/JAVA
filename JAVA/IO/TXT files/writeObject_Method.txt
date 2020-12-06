@@ -1,0 +1,24 @@
+
+class ObjectOutputStream extends ObjectOutput
+{
+	------- other methods ----------
+
+	public void writeObject(Object ob)
+	{
+		if(ob instanceof Externalizable)
+		{
+		Externalizable e=(Externalizable)ob;	
+			e.writeExternal(this);
+		}
+		else if(ob instanceof Serializable)
+		{
+		// writting the object onto the stream	
+		}
+		else
+		{
+	\\ NotSerializableException generated
+		}
+	}
+
+	--------- other methods ----------
+}

@@ -1,0 +1,21 @@
+.bg {
+	background:
+		url('http://www.podcastinghandbook.co/wp-content/uploads/2018/06/world-map-wallpaper-for-windows-10-new-free-antique-map-background-hd-wallpapers-background-photos-valid-578-map-hd-wallpapers-of-world-map-wallpaper-for-windows-10-new-free-antique-map-background-hd.png')
+		no-repeat;
+	width: 100%;
+	height: 100%;
+}
+
+nav {
+	color: black;
+}
+
+.form-container {
+	color: white;
+	border: 0px solid;
+	padding: 50px 60px;
+	margin-top: 20vh;
+	-webkit-box-shadow: -1px 4px 26px 11px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: -1px 4px 26px 11px rgba(0, 0, 0, 0.75);
+	box-shadow: -1px 4px 26px 11px rgba(0, 0, 0, 0.75);
+}

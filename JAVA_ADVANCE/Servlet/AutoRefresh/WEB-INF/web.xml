@@ -1,0 +1,20 @@
+<web-app>
+	<servlet>
+		<servlet-name>RefreshServlet</servlet-name>
+		<servlet-class>RefreshServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RefreshServlet</servlet-name>
+		<url-pattern>/refresh</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>RefreshServlet2</servlet-name>
+	<servlet-class>RefreshServlet2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RefreshServlet2</servlet-name>
+		<url-pattern>/refresh2</url-pattern>
+	</servlet-mapping>
+
+</web-app>

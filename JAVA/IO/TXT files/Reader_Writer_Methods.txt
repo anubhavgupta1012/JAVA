@@ -1,0 +1,20 @@
+
+Reader  &  Writer  classes-
+--------------------------
+
+methods of Reader class:
+	
+	public int read()
+	
+	public int read(char []ch)
+	
+methods of Writer class:
+	
+	public void write(int ch)
+
+	public void write(char ch[])
+
+	public void write(String str)					
+	
+
+		

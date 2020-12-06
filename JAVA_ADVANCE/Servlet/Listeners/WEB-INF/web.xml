@@ -1,0 +1,48 @@
+<web-app>
+
+		
+	<servlet>
+		<servlet-name>ContextListenerServlet</servlet-name>
+		<servlet-class>ContextListenerServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>ContextListenerServlet</servlet-name>
+		<url-pattern>/context</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SessionListenerServlet</servlet-name>
+		<servlet-class>SessionListenerServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>SessionListenerServlet</servlet-name>
+		<url-pattern>/session</url-pattern>
+	</servlet-mapping>
+
+	
+	<servlet>
+		<servlet-name>RequestListenerServlet</servlet-name>
+		<servlet-class>RequestListenerServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>RequestListenerServlet</servlet-name>
+		<url-pattern>/request</url-pattern>
+	</servlet-mapping>
+
+	
+	<listener>
+		<listener-class>MyContextListener</listener-class>
+	</listener>
+	
+	<listener>
+		<listener-class>MyRequestListener</listener-class>
+	</listener>
+	
+	<listener>
+		<listener-class>MySessionListener</listener-class>
+	</listener>
+	
+</web-app>

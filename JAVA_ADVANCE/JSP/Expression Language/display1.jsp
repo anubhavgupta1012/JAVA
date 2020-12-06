@@ -1,0 +1,3 @@
+
+	${sessionScope.Author}::
+	${sessionScope.Book}

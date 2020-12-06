@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+		
+	<bean id="customerBean" class="Customer">
+		<property name="lists">
+			<list>
+			<value>1</value>
+			<ref bean="personBean" />
+			</list>
+		</property>
+
+		<property name="sets">
+			<set>
+			<value>2</value>
+			<ref bean="personBean" />
+			</set>
+		</property>
+
+		<property name="maps">
+			<map>
+			<entry key="key1" value="1" />
+			<entry key="key2" value-ref="personBean" />
+			<entry key="key3">
+				<bean class="Person">
+					<property name="name" value="Anubhav12" />
+					<property name="address" value="Banglore12" />
+					<property name="age" value="22" />
+				</bean>
+			</entry>				
+			</map>
+		</property>
+		
+		<property name="pros">
+		<props>
+			<prop key="java">Education.com</prop>
+			<prop key="JOSH">JOSH BROLIN</prop>
+		</props>
+		</property>
+	</bean>
+	
+	<bean id="personBean" class="Person">
+		<property name="name" value="Anubhav" />
+		<property name="address" value="Banglore" />
+		<property name="age" value="22" />
+	</bean>		
+</beans>

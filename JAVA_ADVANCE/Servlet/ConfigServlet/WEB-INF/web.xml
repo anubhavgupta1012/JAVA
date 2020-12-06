@@ -1,0 +1,23 @@
+<web-app>
+<servlet>
+<servlet-name>ConfigServletTest </servlet-name>
+<servlet-class>ConfigServletTest </servlet-class>
+<init-param>
+<param-name>driver</param-name>
+<param-value>oracle.jdbc.driver.OracleDriver</param-value>
+</init-param>
+
+<init-param>
+<param-name>image</param-name>
+<param-value>https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Love-zh.svg/2000px-Love-zh.svg.png</param-value>
+</init-param>
+
+</servlet>
+
+<servlet-mapping>
+<servlet-name>ConfigServletTest</servlet-name>
+<url-pattern>/viaConfigServlet</url-pattern>
+</servlet-mapping>
+
+
+</web-app>

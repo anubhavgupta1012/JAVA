@@ -1,0 +1,13 @@
+
+Reader
+	<- FileReader
+	<- BufferedReader
+	<- CharArrayReader
+	<- InputStreamReader
+	
+
+Writer
+	<- FileWriter
+	<- BufferedWriter
+	<- CharArrayWriter
+	<- OutputStreamWriter

@@ -1,0 +1,64 @@
+methods:
+
+	1.) public boolean createNewFile()
+		- This method always create a new file with name encapsulated by the File object.
+		
+	eg.
+	File f = new File("abc.txt");
+	f.createNewFile(); 
+	// new file will be created with the name abc.txt
+	
+	2.) public boolean delete()
+		- This method will delete the file/directory represented by this File object. In case of directory, it must be empty.
+
+	3.) public boolean mkdir()
+		- will create the directory
+
+	4.) public boolean isFile()
+	- Returns true if this File object represents to the file.
+
+	
+	5.) public boolean exists()
+		- Returns true if file/dir exist whose name is encapsulated by this File object.
+
+		File f = new File("xyz.txt");
+		Sop(f.exists())
+		
+	
+	6.) public boolean renameTo(File f)
+	- It will rename this file with the name of argumented file.
+		
+			f1.renameTo(f2);
+	
+	7.) public String getName()
+		- returns the file name		
+
+	8.) public String getPath()
+		- returns the path of the file
+
+	9.) public String getParent()
+		- returns the parent in which this file/dir exist
+
+	10.) public File[] listFiles()
+		- Returns the Array of File objects represents to the sub dir and file of this dir.
+	- only be invoked when this File object pointed to the dir.
+		
+		eg.
+			File f = new File("d:\\temp");
+			File []list = f.listFiles();
+		
+
+	11.) public String[] list() 
+		- Returns the list of the names of sub dir and files contained by this dir.		
+	
+		
+	ETC.		
+	
+		
+	
+
+
+
+
+		
+		

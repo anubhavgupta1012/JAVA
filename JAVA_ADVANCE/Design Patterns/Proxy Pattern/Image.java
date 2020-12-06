@@ -1,0 +1,7 @@
+interface Image{
+	
+	void display();
+
+			
+		
+		}

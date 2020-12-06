@@ -1,0 +1,11 @@
+import java.util.*;
+
+
+public class Customer {
+private List<Object> lists;
+private Set<Object> sets;
+private Maps<Object> map;
+private Properties pros;
+
+
+}

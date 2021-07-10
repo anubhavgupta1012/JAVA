@@ -4,9 +4,9 @@ class JoinTest {
         System.out.println("Main is going to join The thread");
 
         try {
-            //ip.join();
-            Thread.sleep(5000);
-            System.out.println("Main gone to Waiting State");
+             ip.join();
+            //System.out.println("Main gone to Waiting State");
+            //Thread.sleep(5000);
         } catch (Exception e) {
         }
 
